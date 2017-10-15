@@ -1,0 +1,67 @@
+body{
+	font-family: Arial, serif;
+	font-size: 17px;
+	margin: 0;
+	padding: 0;
+}
+ul.outer{
+	background-color: #5c5cbd;
+	color: white;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+} 
+
+ul li{
+	list-style: none;
+}
+
+ul.outer > li{
+	display: inline-block;
+	width: 18%;
+	padding-top: 12px;
+}
+
+ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+ul li:hover,
+ul li a:hover,
+ul li:hover > a{
+	color: violet;
+}
+
+ul.sub{
+	position: absolute;
+	margin-left: 22px;
+	padding: 10px 0;
+	width: 15%;
+	background-color: #5c5cbd;	
+	border-radius: 5px;
+	left: -999em;/* hide the sub menu */
+}
+
+ul.sub li {
+	line-height: 24px;
+}
+
+ul li:hover ul.sub{
+	display: block;
+	left: auto;/* show the sub menu when mouse over on list */
+}
+
+
+
+
+
+
+
+
+
+
+
+
